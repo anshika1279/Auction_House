@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Auction</h1>
+        <div id="wallet-connect">
+            <button onclick="connectWallet()">Connect Wallet</button>
+        </div>
+
+        <div id="auction-details" style="display:none;">
+            <h2>Auction Details</h2>
+            <p id="auction-status"></p>
+            <p>Highest Bid: <span id="highestBid">0</span> ETH</p>
+            <p>Highest Bidder: <span id="highestBidder">None</span></p>
+            <p>Auction Ends At: <span id="auctionEndTime">--</span></p>
+
+            <div>
+                <input type="number" id="bidAmount" placeholder="Enter bid amount in ETH" />
+                <button onclick="placeBid()">Place Bid</button>
+            </div>
+
+            <button id="endAuctionButton" onclick="endAuction()" style="display:none;">End Auction</button>
+
+            <div>
+                <button onclick="withdraw()">Withdraw Overbid</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="auction.js"></script>
+</body>
+</html>

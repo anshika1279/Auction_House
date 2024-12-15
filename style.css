@@ -1,0 +1,222 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #057a8d; /* Teal text */
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.main-container {
+    background-color: #f5e6d7; /* Light brown background */
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title styles */
+h1 {
+    font-size: 2.5em;
+    color: #057a8d; /* Teal */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #057a8d;
+    margin-bottom: 10px;
+}
+
+/* Paragraph and text */
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #057a8d;
+}
+
+/* Button styles */
+button {
+    background-color: #057a8d; /* Teal */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #046f7c; /* Slightly darker teal */
+}
+
+button:disabled {
+    background-color: #bbb; /* Disabled button color */
+    cursor: not-allowed;
+}
+
+/* Input field styles */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+input[type="number"]:focus {
+    border-color: #057a8d; /* Teal border on focus */
+    outline: none;
+}
+
+/* Wallet connect section */
+#wallet-connect {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Auction details */
+#auction-details {
+    display: none;
+}
+
+#auction-status {
+    font-size: 1.2em;
+    color: #e74c3c; /* Red for status text */
+    margin-bottom: 20px;
+}
+
+/* Auction status and button visibility */
+#endAuctionButton {
+    display: none;
+    margin-top: 20px;
+}
+
+button#endAuctionButton {
+    width: auto;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Landing page container */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Hero section */
+.hero-section {
+    background-color: #f5e6d7; /* Light brown background */
+    border-radius: 15px;
+    padding: 50px 30px;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #057a8d; /* Teal */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    color: #057a8d;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    background-color: #057a8d; /* Teal */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+.hero-content button:hover {
+    background-color: #046f7c; /* Slightly darker teal */
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    font-size: 1em;
+    color: #057a8d;
+    margin-top: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .landing-container {
+        padding: 10px;
+    }
+
+    .hero-section {
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    .hero-content button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
